@@ -416,7 +416,7 @@ h1 {
 
 h1 a {
     display: block;
-    background: url('./assets//logo.png') no-repeat;
+    background: url('./assets/header-logo.png') no-repeat;
     width: 90px;
     height: 40px;
     text-indent: 101%;
