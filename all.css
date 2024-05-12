@@ -451,7 +451,10 @@ h1 a {
 .nav-link {
     display: block;
     padding: 4px 8px;
+}
 
+.nav-link:hover {
+    font-weight: 600;
 }
 
 /* 外框效果 */
@@ -596,9 +599,6 @@ h1 a {
 .tags-item {
     margin-left: 8px;
     margin-right: 8px;
-    background: #F1F1F1;
-    border-radius: 16px;
-    padding: 4px 12px 4px 12px;
 }
 
 .tags-item:first-child {
@@ -607,6 +607,17 @@ h1 a {
 
 .tags-item:last-child {
     margin-right: 0;
+}
+
+.tags-link {
+    background: #F1F1F1;
+    padding: 4px 12px 4px 12px;
+    border-radius: 16px;
+}
+
+.tags-link:hover {
+    color: #F1F1F1;
+    background: #000;
 }
 
 /* pagination */
