@@ -133,8 +133,7 @@ table {
 
 body {
     font-family: "Noto Sans", sans-serif;
-    line-height: 1;
-    font-size: 16px;
+    line-height: 1.5
 }
 
 * {
@@ -450,8 +449,57 @@ h1 a {
     font-weight: 600;
 }
 
+.outer-line-top-left {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #919191;
+    border-top: 1px solid #919191;
+    transition: all 0.5s ease-in;
+}
+
+.outer-line-bottom-left {
+    opacity: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #919191;
+    border-bottom: 1px solid #919191;
+    transition: all 0.5s ease-in;
+}
+
+.outer-line-top-right {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #919191;
+    border-top: 1px solid #919191;
+    transition: all 0.5s ease-in;
+}
+
+.outer-line-bottom-right {
+    opacity: 0;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #919191;
+    border-bottom: 1px solid #919191;
+    transition: all 0.5s ease-in;
+}
+
 /* 外框效果 */
 .nav-link:hover~.outer-line-top-left {
+    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
@@ -462,6 +510,7 @@ h1 a {
 }
 
 .nav-link:hover~.outer-line-bottom-left {
+    opacity: 1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -472,6 +521,7 @@ h1 a {
 }
 
 .nav-link:hover~.outer-line-top-right {
+    opacity: 1;
     position: absolute;
     top: 0;
     right: 0%;
@@ -482,6 +532,7 @@ h1 a {
 }
 
 .nav-link:hover~.outer-line-bottom-right {
+    opacity: 1;
     position: absolute;
     bottom: 0;
     right: 0%;
@@ -563,9 +614,9 @@ h1 a {
     padding: 0 16px;
 }
 
-.portfolio-list {
+/* .portfolio-list {
     max-width: 100%;
-}
+} */
 
 .portfolio-item {
     width: 49%;
@@ -575,13 +626,14 @@ h1 a {
 .portfolio-link {
     display: block;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .portfolio-img {
     transition: transform 0.8s ease;
-    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
     object-fit: cover;
-    transform: scale(1, 1);
 }
 
 .portfolio-link:hover>.portfolio-img {
@@ -603,6 +655,7 @@ h1 a {
 }
 
 .tags-link {
+    display: block;
     background: #F1F1F1;
     padding: 4px 12px 4px 12px;
     border-radius: 16px;
